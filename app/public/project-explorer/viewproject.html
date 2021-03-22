@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+</html>
+<head>
+    <meta charset="UTF-8">
+    <title>View Project</title>
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary mb-4">
+            <a class="navbar-brand" href="index.html">Project Explorer</a> 
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button> 
+            
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" name="searchForm" placeholder="Search Projects" aria-label="Search">
+                    <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+                </form>
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="createproject.html">Submit</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="register.html">Sign up</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">Login</a>
+                    </li>
+                </ul>
+                
+            </div>    
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <h3>Project 1</h3>
+            <div class="containder bg-light p-3" >
+                <div class="row">
+                    <div class="col-md-3 align-self-end">
+                        Created by
+                    </div>
+                    <div class="col-md-3 align-self-end">
+                        Date Created
+                    </div>
+                    <div class="col-md-3 align-self-end">
+                        Last Updated
+                    </div>
+                    <div class="col-md-3 d-flex justify-content-end">
+                        <input type="button" class="btn btn-primary" value="Edit Project"/>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3">
+                        Jane Doe
+                    </div>
+                    <div class="col-md-3">
+                        00/00/0000
+                    </div>
+                    <div class="col-md-3">
+                        01/01/0001
+                    </div>
+                </div>
+
+            </div>
+            <div class="container mt-4">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h5>Project Abstract</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quisque id diam vel quam elementum. Diam in arcu cursus euismod quis. Libero justo laoreet sit amet cursus sit amet.</p>
+                        <label for="comment" class="form-label"><h5>Comments</h5></label>
+                        <textarea type="text" name="abstract" class="form-control" rows="3" placeholder="Leave a comment."></textarea>                    
+                        <input type="button" class="btn btn-primary mt-4" value="Submit"/>
+                    </div>
+                    <div class="col-md-6">
+                        <h5>Project Details</h5>
+                        <div class="card mb-4">
+                            <div class="card-header">
+                                Authors(s)
+                            </div>
+                            <div class="card-body">
+                                Ade Chris
+                            </div>
+                            <div class="card-footer text-primary">
+                                #web
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header">
+                                Project files
+                            </div>
+                            <div class="card-body d-flex justify-content-center">
+                                No files uploaded yet.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-md-6 d-flex justify-content-center">
+                        No comments added yet.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div class="container mt-4">
+        <footer class="page-footer font-small blue pt-4 bg-light">
+            <div class="footer-copyright text-right py-3">Project Explorer © 2020.
+                <span class="font-weight-bold">Edconnect</span>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

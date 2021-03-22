@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+</html>
+<head>
+    <meta charset="UTF-8">
+    <title>Edit Project</title>
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary mb-4">
+            <a class="navbar-brand" href="index.html">Project Explorer</a> 
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button> 
+            
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" name="searchForm" placeholder="Search Projects" aria-label="Search">
+                    <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+                </form>
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="createproject.html">Submit</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="register.html">Sign up</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">Login</a>
+                    </li>
+                </ul>
+                
+            </div>    
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <h2>Project 1</h2>
+            <div class="container bg-light py-2">
+                <div class="row">
+                    <div class="col-md-3">
+                        Created By
+                    </div>
+                    <div class="col-md-3">
+                        Date Created
+                    </div>
+                    <div class="col-md-3">
+                        Last Updated
+                    </div>
+                    <div class="col-md-3 d-flex justify-content-end">
+                        <input type="button" class="btn btn-primary" value="View Project"/>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3">
+                        Jane Doe
+                    </div>
+                    <div class="col-md-3">
+                        00/00/0000
+                    </div>
+                    <div class="col-md-3">
+                        01/01/0001
+                    </div>
+                    
+                </div>
+            </div>
+
+            
+        </div>
+            
+        <div class="container mt-4">
+            <div class="row">
+                <div class="col">
+                    <h5>Edit Project</h5>
+                    <form name="editProject">
+                        <div class="form-group">
+                            <label for="name" class="form-label">Project Name</label>
+                            <input type="text" name="name" class="form-control" placeholder="Project 1."/>
+                            <label for="abstract" class="form-label">Project Abstract:</label>
+                            <textarea type="text" name="abstract" class="form-control" rows="10" placeholder="Project 1 is a very interesting project"></textarea>
+                            <label for="authors" class="form-label">Authors:</label>
+                            <input type="text" name="authors" class="form-control" placeholder="Ade Chris"/>
+                            <label for="tags" class="form-label" >Tag(s):</label>
+                            <input type="text" name="tags" class="form-control" placeholder="#web"/>
+                            <input type="submit" value="Save" class="btn btn-primary"/>
+                        </div>
+                    </form>
+                </div>
+                <div class="col">
+                    <h5>Manage Project Files</h5>
+                    <div class="custom-file">
+                        <input type="file" class="custom-file-input" id="customFile">
+                        <label class="custom-file-label" for="customFile">Click to open file browser</label>
+                    </div>
+                    <div class="card mt-4">
+                        <div class="card-header">
+                            <h5>Project Files</h5>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">No file uploaded yet</p>
+                        </div>
+
+                    </div>
+                    
+                    
+                </div>
+            </div>
+        </div>
+    
+    </main>
+    <div class="container mt-4">
+        <footer class="page-footer font-small blue pt-4 bg-light">
+            <div class="footer-copyright text-right py-3">Project Explorer © 2020.
+                <span class="font-weight-bold">Edconnect</span>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

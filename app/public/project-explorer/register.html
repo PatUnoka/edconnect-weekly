@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+</html>
+<head>
+    <meta charset="UTF-8">
+    <title>Sign up</title>
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary mb-4">
+            <a class="navbar-brand" href="index.html">Project Explorer</a> 
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button> 
+            
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" name="searchForm" placeholder="Search Projects" aria-label="Search">
+                    <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+                </form>
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="createproject.html">Submit</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="register.html">Sign up</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">Login</a>
+                    </li>
+                </ul>
+                
+            </div>    
+        </nav>
+    </header>
+    
+    <main>
+        <div class="container">
+            <header>
+                <h1>Signup</h1>
+            </header>
+            <form >
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="firstName" class="form-label">First Name</label>
+                        <input type="text" class="form-control" name="firstName" placeholder="First name"/>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="lastName" class="form-label">Last Name</label>
+                        <input type="text" class="form-control" name="lastName" placeholder="Last name"/>
+                    </div>
+
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="email" class="form-label">Email Address</label>
+                        <input type="email" class="form-control" name="email" placeholder="Your Email Address"/>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="password" class="form-label">Password</label>
+                        <input type="password" class="form-control" name="password" placeholder="Your Password"/>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="program" class="form-label">Program</label>
+                        <select class="form-control" name="program">
+                            <option selected disabled value="">Choose...</option>
+                            <option value="computer_science">Computer Science</option>
+                            <option value="computer_information_systems">Computer Information Systems</option>
+                            <option value="computer_technology">Computer Technology</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label for="matricNumber" class="form-label">Matric Number</label>
+                        <input type="text" class="form-control" name="matricNumber" placeholder="e.g. 16/2020"/>
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label for="graduationYear" class="form-label">Graduation Year</label>
+                        <select class="form-control" name="graduationYear">
+                            <option selected disabled value="">Choose...</option>
+                            <option value="2013">2013</option>
+                            <option value="2014">2014</option>
+                            <option value="2015">2015</option>
+                            <option value="2016">2016</option>
+                            <option value="2017">2017</option>
+                            <option value="2018">2018</option>
+                            <option value="2019">2019</option>
+                            <option value="2020">2020</option>
+                        </select>
+                    </div>
+                </div>
+                <input class="btn btn-primary" type="submit" value="Sign Up"/>
+            </form>
+
+        </div>
+    </main>
+    <div class="container mt-4">
+        <footer class="page-footer font-small blue pt-4 bg-light">
+            <div class="footer-copyright text-right py-3">Project Explorer © 2020.
+                <span class="font-weight-bold">Edconnect</span>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

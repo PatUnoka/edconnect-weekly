@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+</html>
+<head>
+    <meta charset="UTF-8">
+    <title>Create Project</title>
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary mb-4">
+            <a class="navbar-brand" href="index.html">Project Explorer</a> 
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button> 
+            
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" name="searchForm" placeholder="Search Projects" aria-label="Search">
+                    <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+                </form>
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="createproject.html">Submit</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="register.html">Sign up</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">Login</a>
+                    </li>
+                </ul>
+                
+            </div>    
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            
+            <form name="submitProject" class="mx-auto w-75">
+                <h1>Submit Project</h1>
+                <div class="form-group">
+                    <div >
+                        <label for="name" class="form-label">Project Name:</label><br>
+                        <input type="text" class="form-control" name="name" placeholder="Enter project name"/><br><br>
+                        <label for="abstract" class="form-label">Project Abstract:</label><br>
+                        <textarea type="text" class="form-control" name="abstract"></textarea><br><br>
+                        <label for="authors" class="form-label">Authors:</label><br>
+                        <input type="text" class="form-control" name="authors" placeholder="Enter author names (separated by comma)"/><br><br>
+                        <label for="tags" class="form-label">Tag(s):</label><br>
+                        <input type="text" class="form-control" name="tags" placeholder="Use # to tag project with different topics (e.g. #javascript #mongodb)"/><br><br>
+                        <input type="submit" class="btn btn-primary" value="Continue"/>
+
+                    </div>
+
+                </div>
+                
+            </form>
+
+        </div>
+    </main>
+    <div class="container mt-4">
+        <footer class="page-footer font-small blue pt-4 bg-light">
+            <div class="footer-copyright text-right py-3">Project Explorer © 2020.
+                <span class="font-weight-bold">Edconnect</span>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
