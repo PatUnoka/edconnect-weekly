@@ -16,9 +16,9 @@
             </button> 
             
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="search" name="searchForm" placeholder="Search Projects" aria-label="Search">
-                    <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+                <form class="form-inline">
+                    <input type="text" class="form-control"  placeholder="Search Projects">
+                    <button type="submit" class="btn btn-outline-light">Search</button>
                 </form>
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
@@ -52,9 +52,8 @@
                         Last Updated
                     </div>
                     <div class="col-md-3 d-flex justify-content-end">
-                        <input type="button" class="btn btn-primary" value="View Project"/>
+                        <button type="submit" class="btn btn-primary">View Project</button>                    </div>
                     </div>
-                </div>
                 <div class="row">
                     <div class="col-md-3">
                         Jane Doe
@@ -79,14 +78,14 @@
                     <form name="editProject">
                         <div class="form-group">
                             <label for="name" class="form-label">Project Name</label>
-                            <input type="text" name="name" class="form-control" placeholder="Project 1."/>
-                            <label for="abstract" class="form-label">Project Abstract:</label>
-                            <textarea type="text" name="abstract" class="form-control" rows="10" placeholder="Project 1 is a very interesting project"></textarea>
-                            <label for="authors" class="form-label">Authors:</label>
-                            <input type="text" name="authors" class="form-control" placeholder="Ade Chris"/>
-                            <label for="tags" class="form-label" >Tag(s):</label>
-                            <input type="text" name="tags" class="form-control" placeholder="#web"/>
-                            <input type="submit" value="Save" class="btn btn-primary"/>
+                            <input type="text" name="name" class="form-control" placeholder="Project 1."/><br>
+                            <label for="abstract" class="form-label">Project Abstract</label>
+                            <textarea type="text" name="abstract" class="form-control" rows="10" placeholder="Project 1 is a very interesting project"></textarea><br>
+                            <label for="authors" class="form-label">Authors</label>
+                            <input type="text" name="authors" class="form-control" placeholder="Ade Chris"/><br>
+                            <label for="tags" class="form-label" >Tag(s)</label>
+                            <input type="text" name="tags" class="form-control" placeholder="#web"/><br>
+                            <button type="submit" class="btn btn-primary" >Save</button>
                         </div>
                     </form>
                 </div>

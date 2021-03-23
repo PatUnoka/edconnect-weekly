@@ -16,9 +16,9 @@
             </button> 
             
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="search" name="searchForm" placeholder="Search Projects" aria-label="Search">
-                    <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+                <form class="form-inline">
+                    <input type="text" class="form-control"  placeholder="Search Projects">
+                    <button type="submit" class="btn btn-outline-light">Search</button>
                 </form>
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
@@ -43,18 +43,15 @@
             <form name="submitProject" class="mx-auto w-75">
                 <h1>Submit Project</h1>
                 <div class="form-group">
-                    <div >
-                        <label for="name" class="form-label">Project Name:</label><br>
-                        <input type="text" class="form-control" name="name" placeholder="Enter project name"/><br><br>
-                        <label for="abstract" class="form-label">Project Abstract:</label><br>
-                        <textarea type="text" class="form-control" name="abstract"></textarea><br><br>
-                        <label for="authors" class="form-label">Authors:</label><br>
-                        <input type="text" class="form-control" name="authors" placeholder="Enter author names (separated by comma)"/><br><br>
-                        <label for="tags" class="form-label">Tag(s):</label><br>
-                        <input type="text" class="form-control" name="tags" placeholder="Use # to tag project with different topics (e.g. #javascript #mongodb)"/><br><br>
-                        <input type="submit" class="btn btn-primary" value="Continue"/>
-
-                    </div>
+                    <label for="name" class="form-label">Project Name</label><br>
+                    <input type="text" class="form-control" name="name" placeholder="Enter project name"/><br><br>
+                    <label for="abstract" class="form-label">Project Abstract</label><br>
+                    <textarea type="text" class="form-control" name="abstract"></textarea><br><br>
+                    <label for="authors" class="form-label">Authors</label><br>
+                    <input type="text" class="form-control" name="authors" placeholder="Enter author names (separated by comma)"/><br><br>
+                    <label for="tags" class="form-label">Tag(s)</label><br>
+                    <input type="text" class="form-control" name="tags" placeholder="Use # to tag project with different topics (e.g. #javascript #mongodb)"/><br><br>
+                    <button type="submit" class="btn btn-primary">Continue</button>
 
                 </div>
                 
