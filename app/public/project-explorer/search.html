@@ -43,16 +43,23 @@
                 <form name="searchForm">
                     <div class="form-row form-group bg-light p-3">
                         <div class="form-col col-md-8">
-                            <input type="text" class="form-control form-control-lg" name="searchTerm" value="Project Name, Authors, Abstract, Tags"/>
+                            <input name="searchTerm" type="text" class="form-control form-control-lg" placeholder="Project Name, Authors, Abstract, Tags"/>
                         </div>
                         <div class="form-col col-md-3 form-inline">
-                            <label for="searchType" class="form-label">Search By</label>
-                            <select name="searchType" class="form-control form-control-lg">
-                                <option value="Name">Name</option>
-                                <option value="Abstract">Abstract</option>
-                                <option value="Authors">Authors</option>
-                                <option value="Tags">Tags</option>
-                            </select><br><br>
+                            <!--<label for="searchType" class="form-label btn btn-outline-dark">Search By</label>
+                            -->
+                            <div class="input-group input-group-lg">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">Search By</span>
+                                  </div>
+                                <select name="searchType" class="form-control form-control-lg">
+                                    <option value="Name">Name</option>
+                                    <option value="Abstract">Abstract</option>
+                                    <option value="Authors">Authors</option>
+                                    <option value="Tags">Tags</option>
+                                </select>
+                            </div>
+                            
                         </div>
                         <div class="form-col col-md-1">
                             <button type="submit" class="btn btn-lg btn-primary">Search</button>
