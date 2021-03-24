@@ -39,26 +39,32 @@
     </header>
     <main>
         <div class="container">
-            <h2>Project Gallery</h2>
-            <form name="searchForm">
-                <div class="form-row bg-light p-3">
-                    <div class="col-md-8 form-group">
-                        <input name="searchTerm" type="text" class="form-control form-control-lg" placeholder="Project Name, Authors, Abstract, Tags"/>
+            <header>
+                <h2>Project Gallery</h2>
+            </header>
+            <div class="bg-light p-3">
+                <form>
+                    <div class="form-row">
+                        <div class="form-group col-md-8">
+                            <input name="searchTerm" type="text" class="form-control form-control-lg" placeholder="Project Name, Authors, Abstract, Tags"/>
+                        </div>
+                        <div class="col form-group form-inline">
+                            <label for="searchType" class="form-label">Search By</label>
+                            <select name="searchType" class="form-control form-control-lg">
+                                <option value="Name">Name</option>
+                                <option value="Abstract">Abstract</option>
+                                <option value="Authors">Authors</option>
+                                <option value="Tags">Tags</option>
+                            </select>
+                        </div>
+                        <div class="col-auto form-group">
+                            <button type="submit" class="btn btn-lg btn-primary">Submit</button>
+                        </div>
                     </div>
-                    <div class="col-md-3 form-group form-inline">
-                        <label for="searchType" class="form-label">Search By</label>
-                        <select name="searchType" class="form-control form-control-lg">
-                            <option value="Name">Name</option>
-                            <option value="Abstract">Abstract</option>
-                            <option value="Authors">Authors</option>
-                            <option value="Tags">Tags</option>
-                        </select>
-                    </div>
-                    <div class="col-md-1 form-group">
-                        <button type="submit" class="btn btn-lg btn-primary">Submit</button>
-                    </div>
-                </div>
-            </form>
+                </form>
+
+            </div>
+            
         </div>
         <div class="container mt-4">
             <h3> All Projects
