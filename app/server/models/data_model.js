@@ -9,7 +9,12 @@ class DataModel {
     }
 
     getById(id) {
-
+        const personId = this.data.find(person => person.id === id);
+        if (personId != "") {
+            return personId
+        } else {
+            return null;
+        }
     }
 
     save(obj) {
@@ -21,11 +26,24 @@ class DataModel {
     }
 
     update(obj, id) {
-
+        const updatePerson = this.data.find(person => person.id === id);
+        if (updatePerson != "") {
+            this.data.obj = obj;
+            return true;
+        } else {
+            return false;
+        }
     }
 
     delete(id) {
-
+        const delPerson = this.data.find(person => person.id === id);
+        if (delPerson != "") {
+        //if (this.data.id === id) {
+            delete data.obj;
+            return true;
+        } else {
+            return false;
+        }
     }
 
     // this method will be overriden in the sub classes
