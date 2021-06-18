@@ -5,8 +5,8 @@ class Project {
         this.id = id;
         this.name = name;
         this.abstract = abstract;
-        this.authors = [];
-        this.tags = [];
+        this.authors = authors;
+        this.tags = tags;
         this.createdBy = createdBy;
     }
 }
@@ -14,26 +14,35 @@ class Project {
 class Projects extends DataModel {
     validate(obj) {
         this.errors = [];
-        if (Array.isArray(obj.authors) === false) {
-            this.errors.push("Authors should be an array");
-            return false;
-        } else if (Array.isArray(obj.tags)===false) {
-            this.errors.push("Tags should be an array");
-            return false;
-        } else if (obj.id === "") {
-            this.errors.push("Id should not be empty");
-            return false;
-        } else if (obj.name === "") {
-            this.errors.push("name should not be empty");
-            return false;
-        } else if (obj.abstact === "") {
-            this.errors.push("abstract should not be empty");
-            return false;
-        } else if (obj.createdBy === "") {
-            this.errors.push("createdBy should not be empty");
-            return false;
-        } else {
+        
+        if (obj.authors === "" || obj.authors === undefined || obj.authors === null) {
+            this.errors.push("authors should not be empty");
+        } else if (! Array.isArray(obj.authors) ) {  
+            this.errors.push("authors should be an array");
+        }
+
+        if (obj.tags === "" || obj.tags === undefined || obj.tags === null) {
+            this.errors.push("tags should not be empty");
+        } else if (! Array.isArray(obj.tags) ) {  
+            this.errors.push("tags should be an array");
+        }
+
+        if (obj.name === "" || obj.name === undefined || obj.name === null) {                 
+            this.errors.push("name should not be empty.");
+        }
+
+        if (obj.abstract === "" || obj.abstract=== undefined || obj.abstract === null) {                 
+            this.errors.push("abstract should not be empty.");
+        }
+
+        if (obj.createdBy === "" || obj.createdBy=== undefined || obj.createdBy === null) {                 
+            this.errors.push("createdBy should not be empty.");
+        }
+
+        if (this.errors.length === 0){
             return true;
+        } else {
+            return false;
         }
 
     }

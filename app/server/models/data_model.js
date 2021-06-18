@@ -9,11 +9,11 @@ class DataModel {
     }
 
     getById(id) {
-        const personId = this.data.find(person => person.id === id);
-        if (personId != "") {
-            return personId
-        } else {
+        const personById = this.data.find(person => person.id === id);
+        if (personById === undefined) {
             return null;
+        } else {
+            return personById;
         }
     }
 
@@ -27,22 +27,22 @@ class DataModel {
 
     update(obj, id) {
         const updatePerson = this.data.find(person => person.id === id);
-        if (updatePerson != "") {
-            this.data.obj = obj;
-            return true;
-        } else {
+        if (updatePerson === undefined) {
             return false;
+        } else {
+            this.data.obj = obj;
+            Object.assign(updatePerson, obj)
+            return true;
         }
     }
 
     delete(id) {
         const delPerson = this.data.find(person => person.id === id);
-        if (delPerson != "") {
-        //if (this.data.id === id) {
-            delete data.obj;
-            return true;
-        } else {
+        if (delPerson === undefined) {
             return false;
+        } else {
+            this.data.pop(person => person.id === id);
+            return true;
         }
     }
 
