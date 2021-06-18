@@ -27,6 +27,10 @@ class Projects extends DataModel {
             this.errors.push("tags should be an array");
         }
 
+        if (obj.id === "" || obj.id === undefined || obj.id === null) {                 
+            this.errors.push("id should not be empty.");
+        }
+
         if (obj.name === "" || obj.name === undefined || obj.name === null) {                 
             this.errors.push("name should not be empty.");
         }
