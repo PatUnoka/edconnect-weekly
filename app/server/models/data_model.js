@@ -37,14 +37,29 @@ class DataModel {
     }
 
     delete(id) {
+        /*const delPerson = this.data.find(person => person.id === id);
+        if (delPerson === undefined) {
+            return false;
+        } else {
+            let personIndex = this.data.indexOf(delPerson);
+            this.data.splice(delPerson, personIndex);
+            return true;
+        }*/
         const delPerson = this.data.find(person => person.id === id);
         if (delPerson === undefined) {
             return false;
         } else {
-            this.data.pop(person => person.id === id);
-            return true;
+            for (let i=0; i<this.data.length; i++) {
+                if (this.data[i].id === id) {
+                    this.data.splice(i, 1)
+                    return true;
+                    break;
+                }
+            }
+                            
         }
     }
+   
 
     // this method will be overriden in the sub classes
     validate(obj) {
